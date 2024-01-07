@@ -38,12 +38,13 @@ const TodosList = ({
         )}
       </Droppable>
       <div className="todos-list-footer todo-item">
-        <span className="items-left">{`${itemsLeft} items left`}</span>
+        <span className="items-left" data-testid="items-left">{`${itemsLeft} items left`}</span>
         {children}
         <span
           className="clear-button"
           role="button"
           onClick={handleClearCompleted}
+          data-testid="clear-completed"
         >
           Clear completed
         </span>

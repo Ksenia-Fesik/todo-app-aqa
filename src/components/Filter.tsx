@@ -15,6 +15,7 @@ const Filter = ({ filter, onFilterChange }: IProps) => {
           className={isSelected("all")}
           onClick={handleFilterChange}
           role="button"
+          data-testid="all-filter"
         >
           All
         </button>
@@ -23,6 +24,7 @@ const Filter = ({ filter, onFilterChange }: IProps) => {
           className={isSelected("active")}
           onClick={handleFilterChange}
           role="button"
+          data-testid="active-filter"
         >
           Active
         </button>
@@ -31,6 +33,7 @@ const Filter = ({ filter, onFilterChange }: IProps) => {
           className={isSelected("completed")}
           onClick={handleFilterChange}
           role="button"
+          data-testid="completed-filter"
         >
           Completed
         </button>
