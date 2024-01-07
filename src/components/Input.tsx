@@ -9,6 +9,7 @@ const Input = ({ inputValue, handleInputChange, handleAddTodo }: IProps) => {
         onChange={handleInputChange}
         onKeyDown={handleAddTodo}
         placeholder="Create a new todo..."
+        data-testid="add-todo-input"
       />
       <div className="input-icon">
         <RadioButton checked={false} disabled onCheck={null} />
